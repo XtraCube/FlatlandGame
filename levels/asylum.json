@@ -1,0 +1,99 @@
+{
+  "canRotate": true,
+  "playerSpawn": { "x": 0, "y": 0 },
+  "objects": [
+    {
+      "type": "rect",
+      "x": 200,
+      "y": 0,
+      "width": 40,
+      "height": 40,
+      "fillColor": { "color": "white", "alpha": 0 },
+      "strokeColor": "white",
+      "strokeWidth": 4
+    },
+    {
+      "type": "rect",
+      "x": 300,
+      "y": 0,
+      "width": 300,
+      "height": 300,
+      "fillColor": { "color": "white", "alpha": 0 },
+      "strokeColor": "white",
+      "strokeWidth": 4
+    },
+    {
+      "type": "rect",
+      "x": 0,
+      "y": 300,
+      "width": 300,
+      "height": 300,
+      "fillColor": { "color": "white", "alpha": 0 },
+      "strokeColor": "white",
+      "strokeWidth": 4
+    },
+    {
+      "type": "rect",
+      "x": 0,
+      "y": -300,
+      "width": 300,
+      "height": 300,
+      "fillColor": { "color": "white", "alpha": 0 },
+      "strokeColor": "white",
+      "strokeWidth": 4
+    },
+    {
+      "type": "rect",
+      "x": 0,
+      "y": 600,
+      "width": 300,
+      "height": 300,
+      "fillColor": { "color": "white", "alpha": 0 },
+      "strokeColor": "white",
+      "strokeWidth": 4
+    },
+    {
+      "type": "rect",
+      "x": -300,
+      "y": 0,
+      "width": 300,
+      "height": 300,
+      "fillColor": { "color": "white", "alpha": 0 },
+      "strokeColor": "white",
+      "strokeWidth": 4
+    },
+    {
+      "type": "polygon",
+      "x": -23,
+      "y": 323,
+      "sides": 5,
+      "radius": 35,
+      "fillColor": { "color": "white", "alpha": 0 },
+      "strokeColor": "white",
+      "strokeWidth": 4
+    },
+    {
+      "type": "rect",
+      "x": 30,
+      "y":-340,
+      "width": 32,
+      "height": 32,
+      "fillColor": { "color": "white", "alpha": 0 },
+      "strokeColor": "white",
+      "strokeWidth": 4
+    }
+  ],
+  "dialogueTree": {
+    "root": {
+      "id": "root",
+      "speaker": "Your brother",
+      "message": "{It has been 7 years. Despite your brother witnessing the Sphere grow in the Council room, he still does not believe in the third dimension. Scarcely a week has gone by without you giving him some manner of explanation about the third dimension, which he then relays to the council, or at least you presume.} I am sorry dear brother, but I simply do not believe in this third dimension.",
+      "choices": [
+        {
+          "text": "The end. Click here to return to the beginning!",
+          "nextId": "level:lineland"
+        }
+      ]
+    }
+  }
+}

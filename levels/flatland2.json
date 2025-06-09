@@ -1,0 +1,31 @@
+{
+  "canRotate": true,
+  "playerSpawn": { "x": 0, "y": 0 },
+  "objects": [
+    {
+      "type": "house",
+      "x": 0,
+      "y": 0,
+      "radius": 300,
+      "wallWidth": 5,
+      "eastHoleLength": 20,
+      "westHoleLength": 100,
+      "fillColor": { "color": "white", "alpha": 0 },
+      "strokeColor": "white",
+      "strokeWidth": 4
+    }
+  ],
+  "dialogueTree": {
+    "root": {
+      "id": "root",
+      "speaker": "You (Square)",
+      "message": "{I feel overwhelmed. I mustn't tell anyone of what I have learned, at least not yet. I should head to bed and think about it more in the morning...}",
+      "choices": [
+        {
+          "text": "{Go to bed}",
+          "nextId": "level:pointland"
+        }
+      ]
+    }
+  }
+}

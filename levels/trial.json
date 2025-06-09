@@ -1,0 +1,62 @@
+{
+  "canRotate": true,
+  "playerSpawn": { "x": 0, "y": 0 },
+  "objects": [
+    {
+      "type": "house",
+      "x": 0,
+      "y": 0,
+      "radius": 600,
+      "wallWidth": 5,
+      "eastHoleLength": 20,
+      "westHoleLength": 100,
+      "fillColor": { "color": "white", "alpha": 0 },
+      "strokeColor": "white",
+      "strokeWidth": 4
+    },
+    {
+      "type": "circle",
+      "x": 0,
+      "y": -50,
+      "radius": 40,
+      "fillColor": { "color": "white", "alpha": 0 },
+      "strokeColor": "white",
+      "strokeWidth": 4
+    }
+  ],
+  "dialogueTree": {
+    "root": {
+      "id": "root",
+      "speaker": "You (Square)",
+      "message": "{After trying in vain to keep it a secret of your knowledge of the third dimension while you develop some way to make a proof, you get caught in a moment of passion. You are put to trial in front of the High Council.}",
+      "choices": [
+        {
+          "text": "{Begin your defense}",
+          "nextId": "trial1"
+        }
+      ]
+    },
+    "trial1": {
+      "id": "trial1",
+      "speaker": "Head Circle",
+      "message": "Can you indicate the direction you mean by upward but not northward? Or can you make any diagram or figure to indicate the existence of a cube?",
+      "choices": [
+        {
+          "text": "I can do neither, however",
+          "nextId": "trial2"
+        }
+      ]
+    },
+    "trial2": {
+      "id": "trial2",
+      "speaker": "Head Circle",
+      "message": "{He cuts you off} Then you shall be sent to the Asylum until you can do either of those requests. You shall be permitted to have visits from your brother, and should you come up with a proof, he will share it and you will be released should the Council take it as true.",
+      "choices": [
+        {
+          "text": "{Accept your fate...}",
+          "nextId": "level:asylum"
+        }
+      ]
+    }
+  }
+}

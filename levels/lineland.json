@@ -1,0 +1,347 @@
+{
+    "playerSpawn": { "x": 50, "y": 0 },
+    "canRotate": false,
+    "objects": [
+        {
+            "type": "rect",
+            "x": 0,
+            "y": 40,
+            "width": 1000,
+            "height": 10,
+            "fillColor": { "color": "black", "alpha": 0 },
+            "strokeColor": "black",
+            "strokeWidth": 0,
+            "friction": 0.0
+        },
+        {
+            "type": "rect",
+            "x": 0,
+            "y": -40,
+            "width": 1000,
+            "height": 10,
+            "fillColor": { "color": "black", "alpha": 0 },
+            "strokeColor": "black",
+            "strokeWidth": 0,
+            "friction": 0.0
+        },
+        {
+            "type": "rect",
+            "x": -350,
+            "y": 0,
+            "width": 10,
+            "height": 1000,
+            "fillColor": { "color": "black", "alpha": 0 },
+            "strokeColor": "black",
+            "strokeWidth": 0,
+            "trigger": "wallTrigger"
+        },
+        {
+            "type": "rect",
+            "x": 350,
+            "y": 0,
+            "width": 10,
+            "height": 1000,
+            "fillColor": { "color": "black", "alpha": 0 },
+            "strokeColor": "black",
+            "strokeWidth": 0,
+            "trigger": "wallTrigger"
+        },
+        {
+            "type": "rect",
+            "x": 0,
+            "y": 0,
+            "width": 600,
+            "height": 5,
+            "fillColor": "black",
+            "strokeColor": "black",
+            "strokeWidth": 0,
+            "sensor": true
+        },
+        {
+            "id": "monarch",
+            "type": "rect",
+            "x": 0,
+            "y": 0,
+            "width": 40,
+            "height": 5,
+            "fillColor": "white",
+            "strokeColor": "white",
+            "strokeWidth": 1
+        },
+        {
+            "id": "guard.3",
+            "type": "rect",
+            "x": -120,
+            "y": 0,
+            "width": 10,
+            "height": 5,
+            "fillColor": "white",
+            "strokeColor": "white",
+            "strokeWidth": 1
+        },
+        {
+            "id": "guard.4",
+            "type": "rect",
+            "x": 120,
+            "y": 0,
+            "width": 10,
+            "height": 5,
+            "fillColor": "white",
+            "strokeColor": "white",
+            "strokeWidth": 1
+        },
+        {
+            "id": "guard.5",
+            "type": "rect",
+            "x": -140,
+            "y": 0,
+            "width": 10,
+            "height": 5,
+            "fillColor": "white",
+            "strokeColor": "white",
+            "strokeWidth": 1
+        },
+        {
+            "id": "guard.6",
+            "type": "rect",
+            "x": 140,
+            "y": 0,
+            "width": 10,
+            "height": 5,
+            "fillColor": "white",
+            "strokeColor": "white",
+            "strokeWidth": 1
+        },
+        {
+            "id": "guard.7",
+            "type": "rect",
+            "x": -160,
+            "y": 0,
+            "width": 10,
+            "height": 5,
+            "fillColor": "white",
+            "strokeColor": "white",
+            "strokeWidth": 1
+        },
+        {
+            "id": "guard.8",
+            "type": "rect",
+            "x": 160,
+            "y": 0,
+            "width": 10,
+            "height": 5,
+            "fillColor": "white",
+            "strokeColor": "white",
+            "strokeWidth": 1
+        },
+        {
+            "type": "rect",
+            "x": 200,
+            "y": 0,
+            "width":1,
+            "height": 5,
+            "fillColor": "white",
+            "strokeColor": "white",
+            "strokeWidth": 1
+        },
+        {
+            "type": "rect",
+            "x": -200,
+            "y": 0,
+            "width":1,
+            "height": 5,
+            "fillColor": "white",
+            "strokeColor": "white",
+            "strokeWidth": 1
+        },
+        {
+            "type": "rect",
+            "x": 220,
+            "y": 0,
+            "width":1,
+            "height": 5,
+            "fillColor": "white",
+            "strokeColor": "white",
+            "strokeWidth": 1
+        },
+        {
+            "type": "rect",
+            "x": -220,
+            "y": 0,
+            "width":1,
+            "height": 5,
+            "fillColor": "white",
+            "strokeColor": "white",
+            "strokeWidth": 1
+        },
+        {
+            "type": "rect",
+            "x": 240,
+            "y": 0,
+            "width":1,
+            "height": 5,
+            "fillColor": "white",
+            "strokeColor": "white",
+            "strokeWidth": 1
+        },
+        {
+            "type": "rect",
+            "x": -240,
+            "y": 0,
+            "width":1,
+            "height": 5,
+            "fillColor": "white",
+            "strokeColor": "white",
+            "strokeWidth": 1
+        }
+    ],
+    "dialogueTree": {
+        "wallTrigger" : {
+            "id": "wallTrigger",
+            "speaker": "A Square",
+            "message": "I can't leave here!",
+            "choices": [
+                {
+                    "text": "Return",
+                    "nextId": "{previous}"
+                }
+            ]
+        },
+      "root": {
+        "id": "root",
+        "speaker": "Monarch of Lineland",
+        "message": "Creature, what brings you before me?",
+        "choices": [
+            {
+                "text": "Explain the existence of Flatland.",
+                "nextId": "flatland"
+            },
+            {
+                "text": "Ask about the nature of Lineland.",
+                "nextId": "lineland"
+            },
+            {
+                "text": "Remain silent and observe.",
+                "nextId": "observe"
+            }
+        ]
+      },
+      "flatland": {
+        "id": "flatland",
+        "speaker": "Monarch of Lineland",
+        "message": "Flatland? What sorcery is this? Speak plainly, or face my wrath!",
+        "choices": [
+            {
+                "text": "Attempt to describe a square.",
+                "nextId": "square_desc"
+            },
+            {
+                "text": "Apologize and backtrack.",
+                "nextId": "apologize"
+            }
+        ]
+      },
+      "lineland": {
+        "id": "lineland",
+        "speaker": "Monarch of Lineland",
+        "message": "The nature of Lineland is self-evident! We are the beginning and the end, the Alpha and the Omega! There is nothing beyond our line!",
+        "choices": [
+            {
+                "text": "Suggest there might be something beyond.",
+                "nextId": "beyond"
+            }
+        ]
+      },
+      "observe": {
+        "id": "observe",
+        "speaker": "Monarch of Lineland",
+        "message": "Why do you not speak? Do you mock me with your silence?",
+        "choices": [
+            {
+                "text": "Now explain the existence of Flatland.",
+                "nextId": "flatland"
+            },
+            {
+                "text": "Beg forgiveness and leave.",
+                "nextId": "apologize"
+            }
+        ]
+      },
+      "square_desc": {
+        "id": "square_desc",
+        "speaker": "Monarch of Lineland",
+        "message": "A shape with four sides? Preposterous! Only a line can exist!",
+        "choices": [
+            {
+                "text": "Accept your fate.",
+                "nextId": "attack"
+            }
+        ]
+      },
+      "beyond": {
+        "id": "beyond",
+        "speaker": "Monarch of Lineland",
+        "message": "Blasphemy! There is nothing beyond!",
+        "choices": [
+            {
+                "text": "Apologize and backtrack.",
+                "nextId": "apologize"
+            }
+        ]
+      },
+      "apologize": {
+        "id": "apologize",
+        "speaker": "Monarch of Lineland",
+        "message": "Silence! Your very presence insults the perfection of Lineland.",
+        "choices": [
+            {
+                "text": "Accept your fate.",
+                "nextId": "attack"
+            }
+        ]
+      },
+      "attack": {
+        "id": "attack",
+        "speaker": "Monarch of Lineland",
+        "message": "Guards! Seize this shape-spouter! We will not tolerate such heresy in Lineland!",
+        "choices": []
+      },
+      "heresy": {
+        "id": "heresy",
+        "speaker": "Monarch of Lineland",
+        "message": "You dare speak of shapes beyond the line? This is an affront to everything we hold sacred!",
+        "choices": [
+            {
+                "text": "Defend the existence of other dimensions.",
+                "nextId": "defend"
+            },
+            {
+                "text": "Recant and pledge allegiance to Lineland.",
+                "nextId": "pledge"
+            }
+        ]
+      },
+      "defend": {
+        "id": "defend",
+        "speaker": "Monarch of Lineland",
+        "message": "Your words are meaningless! Guards, take them away!",
+        "choices": [
+            {
+                "text": "Accept your fate.",
+                "nextId": "attack"
+            }
+        ]
+      },
+      "pledge": {
+        "id": "pledge",
+        "speaker": "Monarch of Lineland",
+        "message": "Very well. Perhaps you can be re-educated. But do not speak of such things again!",
+        "choices": [
+            {
+                "text": "Accept your fate.",
+                "nextId": "attack"
+            }
+        ]
+      }
+    }
+}

@@ -1,0 +1,165 @@
+{
+  "playerSpawn": { "x": 0, "y": 0 },
+  "canRotate": true,
+  "objects": [
+    {
+      "type": "polygon",
+      "radius": 5,
+      "sides": 100,
+      "x": 0,
+      "y": 0,
+      "fillColor": { "color": "white", "alpha": 0.0 },
+      "strokeColor": "white",
+      "strokeWidth": 4
+    },
+    {
+      "type": "rect",
+      "x": 0,
+      "y": 200,
+      "width": 400,
+      "height": 10,
+      "fillColor": { "color": "white", "alpha": 0.0 },
+      "strokeColor": "white",
+      "strokeWidth": 0
+    },
+    {
+      "type": "rect",
+      "x": 0,
+      "y": -200,
+      "width": 400,
+      "height": 10,
+      "fillColor": { "color": "white", "alpha": 0.0 },
+      "strokeColor": "white",
+      "strokeWidth": 0
+    },
+    {
+      "type": "rect",
+      "x": 200,
+      "y": 0,
+      "width": 10,
+      "height": 400,
+      "fillColor": { "color": "white", "alpha": 0.0 },
+      "strokeColor": "white",
+      "strokeWidth": 0
+    },
+    {
+      "type": "rect",
+      "x": -200,
+      "y": 0,
+      "width": 10,
+      "height": 400,
+      "fillColor": { "color": "white", "alpha": 0.0 },
+      "strokeColor": "white",
+      "strokeWidth": 0
+    }
+  ],
+  "dialogueTree": {
+    "root": {
+      "id": "root",
+      "speaker": "Sphere",
+      "message": "Now, I take you to the land of no dimensions. A land of endless abyss, known only as pointland. Here, the only miserable creature is but a singular point, though in his own ignorance he has found much bliss. He percieves everything as his own, for he is all he knows. From him we can learn a valuable lesson, ",
+      "choices": [
+        {
+          "text": "Surely we can talk some sense into him, and tell him his true nature...",
+          "nextId": "monarch"
+        }
+      ]
+    },
+    "monarch": {
+      "id": "monarch",
+      "speaker": "Point?",
+      "message": "Ah I am the only and greatest being in the universe!",
+      "choices": [
+        {
+          "text": "Fool. Don't you know there is much more to the world! There are dimensions and other beings! How could you possibly be so content to be alone and know nothing?",
+          "nextId": "spherecomment"
+        }
+      ]
+    },
+    "spherecomment": {
+      "id": "spherecomment",
+      "speaker": "Sphere",
+      "message": "Now listen upon the effect of your harangue on the King of Pointland.",
+      "choices": [
+        {
+          "text": "Continue...",
+          "nextId": "monarchresponse"
+        }
+      ]
+    },
+    "monarchresponse": {
+      "id": "monarchresponse",
+      "speaker": "King of Pointland",
+      "message": "Oh to think! To think! The joy of thinking! How lovely and joyous it is to be!",
+      "choices": [
+        {
+          "text": "Why is he acting this way?",
+          "nextId": "sphereresponse"
+        }
+      ]
+    },
+    "sphereresponse": {
+      "id": "sphereresponse",
+      "speaker": "Sphere",
+      "message": "He is acting this way because he thinks every word is his own. He does not know of the concept of others. Take this as a lesson in the foolishness of complacency and ignorance. But I now have to admit my error to you. I have recieved fresh insight, and I am now able to explain to you the mysteries of Dimensions above the Third.",
+      "choices": [
+        {
+          "text": "Please continue, O Wise Teacher.",
+          "nextId": "mysteries"
+        },
+        {
+          "text": "Ah, so you are not as all-knowing as I had thought.",
+          "nextId": "doYouWish"
+        }
+      ]
+    },
+    "doYouWish": {
+      "id": "doYouWish",
+      "speaker": "Sphere",
+      "message": "Do you wish for me to teach you what you desired to know at our previous meeting? Or do you wish to insult your Teacher?",
+      "choices": [
+        {
+          "text": "I beg your forgiveness, Teacher. Please continue.",
+          "nextId": "mysteries"
+        }
+      ]
+    },
+    "mysteries": {
+      "id": "mysteries",
+      "speaker": "Sphere",
+      "message": "{The Sphere explains how to construct Extra-Solids by the motion of Solids, and Double Extra-Solids by the motion of Extra-Solids.} Now, you have learned all that you need to know. Go and spread the Gospel of Three Dimensions. I hope that your fellow Flatlanders will be more receptive this time.",
+      "choices": [
+        {
+          "text": "I am your humble servant, Teacher. I will do as you command.",
+          "nextId": "dreamLeave"
+        },
+        {
+          "text": "Will you not aid me in my mission?",
+          "nextId": "seeMe"
+        }
+      ]
+    },
+    "seeMe": {
+      "id": "seeMe",
+      "speaker": "Sphere",
+      "message": "You will have to go on without me. You have all you require, and I believe that you will succeed, though I cannot say that you will not suffer for your words by the end of it.",
+      "choices": [
+        {
+          "text": "I will do as you command, your Lordship.",
+          "nextId": "dreamLeave"
+        }
+      ]
+    },
+    "dreamLeave": {
+      "id": "dreamLeave",
+      "speaker": "Square",
+      "message": "{The Sphere slowly fades from your view, and you find yourself in bed back in your house.}",
+      "choices": [
+        {
+          "text": "Continue...",
+          "nextId": "level:flatland3"
+        }
+      ]
+    }
+  }
+}

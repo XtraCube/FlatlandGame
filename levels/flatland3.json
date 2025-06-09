@@ -1,0 +1,83 @@
+{
+  "playerSpawn": { "x": 0, "y": 0 },
+  "canRotate": true,
+  "objects": [
+    {
+      "type": "house",
+      "x": 0,
+      "y": 0,
+      "radius": 300,
+      "wallWidth": 5,
+      "eastHoleLength": 20,
+      "westHoleLength": 100,
+      "fillColor": { "color": "white", "alpha": 0 },
+      "strokeColor": "white",
+      "strokeWidth": 4
+    }
+  ],
+  "dialogueTree": {
+    "root": {
+      "id": "root",
+      "speaker": "You",
+      "message": "{Since my grandson thought of the third dimension on his own, I should try out teaching someone about the third dimension with him. He is a bright young hexagon, so if I can't teach him of the third dimension then I will struggle teaching anyone.}",
+      "choices": [
+        {
+          "text": "OHHH GRANDSON!!!",
+          "nextId": "callgrandson"
+        }
+      ]
+    },
+    "callgrandson": {
+      "id": "callgrandson",
+      "speaker": "Grandson",
+      "message": "What is it, Grandfather?",
+      "choices": [
+        {
+          "text": "How are you this morning?",
+          "nextId": "stall"
+        },
+        {
+          "text": "How did you sleep last night?",
+          "nextId": "stall"
+        },
+        {
+          "text": "I have something to tell you. Do you remember asking about three cubed? And how you thought that a shape may have another direction?",
+          "nextId": "teach"
+        }
+      ]
+    },
+    "stall": {
+      "id": "stall",
+      "speaker": "Grandson",
+      "message": "You called me that loudly just for that? Are you ok father? You yelled the last night and then disappeared last night as well... Do you need to see the doctor?",
+      "choices": [
+        {
+          "text": "I need nothing of the sort. I assure you... I am feeling fine. Do you remember asking about three cubed? And how you thought that a shape may have another direction?",
+          "nextId": "teach"
+        }
+      ]
+    },
+    "teach": {
+      "id": "teach",
+      "speaker": "Grandson",
+      "message": "Dear Grandpa, I assure you I only said that in good fun, and that I meant nothing by it. I knew nothing of the new Law, and I don't think I said anything about this upward but not northward thing. After all, how could a shape even do that? Even if I were a baby, I would not believe something as silly as that! Ha! Ha! ha! ha!",
+      "choices": [
+        {
+          "text": "{You realize the futility of your attempt...} I will leave you to your studies.",
+          "nextId": "leave"
+        }
+      ]
+    },
+    "leave": {
+      "id": "leave",
+      "speaker": "You",
+      "message": "{You leave your grandson to his studies, and you go back to your own studies.}",
+      "choices": [
+        {
+          "text": "Continue...",
+          "nextId": "level:trial"
+        }
+      ]
+    }
+  }
+}

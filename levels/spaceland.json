@@ -1,0 +1,448 @@
+{
+  "objects": [
+    {
+      "type": "polygon",
+      "radius": 500,
+      "sides": 5,
+      "x": 0,
+      "y": -11000,
+      "fillColor": { "color": "white", "alpha": 0.0 },
+      "strokeColor": "white",
+      "strokeWidth": 5     
+    },
+    {
+      "type": "polygon",
+      "radius": 50,
+      "sides": 100,
+      "x": 0,
+      "y": -11200,
+      "fillColor": { "color": "white", "alpha": 0.0 },
+      "strokeColor": "white",
+      "strokeWidth": 4
+    },
+    {
+      "type": "polygon",
+      "radius": 40,
+      "sides": 100,
+      "x": -60,
+      "y": -10800,
+      "fillColor": { "color": "white", "alpha": 0.0 },
+      "strokeColor": "white",
+      "strokeWidth": 4
+    },
+    {
+      "type": "polygon",
+      "radius": 40,
+      "sides": 100,
+      "x": 60,
+      "y": -10800,
+      "fillColor": { "color": "white", "alpha": 0.0 },
+      "strokeColor": "white",
+      "strokeWidth": 4
+    },
+    {
+      "type": "polygon",
+      "radius": 40,
+      "sides": 100,
+      "x": -140,
+      "y": -10900,
+      "fillColor": { "color": "white", "alpha": 0.0 },
+      "strokeColor": "white",
+      "strokeWidth": 4
+    },
+    {
+      "type": "polygon",
+      "radius": 40,
+      "sides": 100,
+      "x": 140,
+      "y": -10900,
+      "fillColor": { "color": "white", "alpha": 0.0 },
+      "strokeColor": "white",
+      "strokeWidth": 4
+    },
+    {
+      "type": "polygon",
+      "radius": 35,
+      "sides": 4,
+      "x": 140,
+      "y": -11100,
+      "fillColor": { "color": "white", "alpha": 0.0 },
+      "strokeColor": "white",
+      "strokeWidth": 4
+    },
+    {
+      "id": "guard",
+      "type": "triangle",
+      "x": -140,
+      "y": -11100,
+      "base": 20,
+      "height": 40,
+      "angle": 2.047198,
+      "fillColor": { "color": "white", "alpha": 0.0 },
+      "strokeColor": "white",
+      "strokeWidth": 4
+    }
+  ],
+  "dialogueTree": {
+    "root": {
+      "id": "root",
+      "speaker": "Sphere",
+      "message": "Here... We are now in what I call Spaceland. Because I changed our third dimension, height, we can see all of Flatland from here...",
+      "choices": [
+        {
+          "text": "Either this is madness or it is Hell!",
+          "nextId": "Hell"
+        },
+        {
+          "text": "What is this? A dream?",
+          "nextId": "dream"
+        },
+        {
+          "text": "WHOAAAAAAAAAAAAAAAA!",
+          "nextId": "amazed"
+        }
+      ]
+    },
+    "Hell": {
+      "id": "Hell",
+      "speaker": "Sphere",
+      "message": "It is neither. This is the reality you have always failed to see. Reality with the third dimension.",
+      "choices": [
+        {
+          "text": "So, what's next?",
+          "nextId": "ready"
+        }
+      ]
+    },
+    "dream": {
+      "id": "dream",
+      "speaker": "Sphere",
+      "message": "This is no dream, for this is the true reality. The reality you have always failed to see. Reality with the third dimension.",
+      "choices": [
+        {
+          "text": "So, what's next?",
+          "nextId": "ready"
+        }
+      ]
+    },
+    "amazed": {
+      "id": "amazed",
+      "speaker": "Sphere",
+      "message": "Your amazement would be humourous, if it weren't for the sad fact that you have been inherently blind to this dimension your whole life.",
+      "choices": [
+        {
+          "text": "So, what's next?",
+          "nextId": "ready"
+        }
+      ]
+    },
+    "ready": {
+      "id": "ready",
+      "speaker": "Sphere",
+      "message": "Now that you see the third dimension is real, we have much to do. Come, let me show you what I mean...",
+      "choices": [
+        {
+          "text": "It's like seeing their souls exposed.",
+          "nextId": "soulVision"
+        },
+        {
+          "text": "This power... is overwhelming.",
+          "nextId": "overwhelmed"
+        }
+      ]
+    },
+    "overwhelmed": {
+      "id": "overwhelmed",
+      "speaker": "Sphere",
+      "message": "Indeed, it is. And even more overwhelming is the fact that you will need to be the one to preach the third dimension to the shapes of flatland. But I believe in you.",
+      "choices": [
+        {
+          "text": "What do you mean?",
+          "nextId": "responsibility"
+        },
+        {
+          "text": "It's like seeing their souls exposed.",
+          "nextId": "soulVision"
+        }
+      ]
+    },
+    "soulVision": {
+      "id": "soulVision",
+      "message": "Indeed. With the third dimension comes revelation. And with revelation, responsibility.",
+      "speaker": "Sphere",
+      "choices": [
+        {
+          "text": "What do you mean?",
+          "nextId": "responsibility"
+        },
+        {
+          "text": "This power... is overwhelming.",
+          "nextId": "overwhelmed"
+        }
+      ]
+    },
+    "responsibility": {
+      "id": "responsibility",
+      "speaker": "Sphere",
+      "message": "Now that you see what lies beyond, you must carry the knowledge back to your people even if they refuse it. ",
+      "choices": [
+        {
+          "text": "They'll never believe me...",
+          "nextId": "exileWarning"
+        },
+        {
+          "text": "I will teach them.",
+          "nextId": "exileWarning"
+        }
+      ]
+    },
+    "exileWarning": { 
+      "id": "exileWarning",
+      "speaker": "Sphere",
+      "message": "Come let us go to the council, so you will see your fate should you fail. I will not sugar coat your mission, but it is something you must do.",
+      "choices": [
+        {
+          "text": "Continue...",
+          "nextId": "monologue"
+        }
+      ]
+    },
+    "monologue": {
+      "id": "monologue",
+      "speaker": " ",
+      "message": "{You are right above the General Assembly Hall of the States of Flatland, where the current Head Circle is speaking before the High Council. You are able to see your brother, a perfectly symmetrical square, who is the Chief Clerk of the High Council.}",
+      "choices": [
+        {
+          "text": "Continue...",
+          "nextId": "council0"
+        }
+      ]
+    },
+    "council0": {
+      "id": "council0",
+      "speaker": "Square's Brother",
+      "message": "It has been found in the texts that on days such as this one, or in other words at the start of every millenia, misguided individuals begin to speak of enlightenment of a third dimension. We shall regard this as heresy, and punish them accordingly. Should they be a triangle of any form, they shall be promptly destroyed. Should they be a square or pentagon, they shall be sent to the district Asylum. For any more perfect shape, they shall be brought before the High Council to determine their fate.",
+      "choices": [
+        {
+          "text": "Oh, that sounds fun...",
+          "nextId": "council1"
+        }
+      ]
+    },
+    "council1": {
+      "id": "council1",
+      "speaker": "Sphere",
+      "message": "You hear your fate. Death or imprisonment awaits the Apostle of the Gospel of Three Dimensions.",
+      "choices": [
+        {
+          "text": "Not so. The matter is so clear to me that I believe I could explain it to even the smallest child of Flatland.",
+          "nextId": "dontWorry"
+        },
+        {
+          "text": "You are right. I do not think I am ready for this responsibility.",
+          "nextId": "dontWorry"
+        }
+      ]
+    },
+    "dontWorry": {
+      "id": "dontWorry",
+      "speaker": "Sphere",
+      "message": "Do not worry. You will spread the Gospel when the time comes. For now, I must complete my own mission. Stay and watch.",
+      "choices": [
+        {
+          "text": "Continue...",
+          "nextId": "sphereEnters"
+        }
+      ]
+    },
+    "sphereEnters": {
+      "id": "sphereEnters",
+      "speaker": "Sphere",
+      "message": "{As you watch, the Sphere leaps into the the middle of the ring of Counsellors.} I have come to proclaim that there is a land of Three Dimensions.",
+      "choices": [
+        {
+          "text": "Continue...",
+          "nextId": "chiefReaction"
+        }
+      ]
+    },
+    "chiefReaction": {
+      "id": "chiefReaction",
+      "speaker": "Chief Circle",
+      "message": "{Many younger Counsellors are taken aback by the Sphere's appearance, but the Chief Circle is unmoved.} Seize this foul being proclaiming this heretical nonsense!",
+      "choices": [
+        {
+          "text": "Continue...",
+          "nextId": "guardsAttack"
+        }
+      ]
+    },
+    "guardsAttack": {
+      "id": "guardsAttack",
+      "speaker": "Isosceles Triangles",
+      "message": "{The isosceles triangles descend upon the Sphere, but he moves out of Flatland until he has vanished from their view.} What?! He is gone!",
+      "choices": [
+        {
+          "text": "Continue...",
+          "nextId": "councilOver"
+        }
+      ]
+    },
+    "councilOver": {
+      "id": "councilOver",
+      "speaker": "Chief Circle",
+      "message": "Do not be alarmed my fellow Counsellors. A similar event took place on the last two millennial meetings. You will, of course, not speak to anyone about this outside this Cabinet. {Raising his voice} Guards! Arrest and gag the policemen! You know your duty. {To the Clerk} I regret that you must now be imprisoned indefinitely. If you make no future mention of today's events, we will spare your life.",
+      "choices": [
+        {
+          "text": "Continue...",
+          "nextId": "showSolids"
+        }
+      ]
+    },
+    "showSolids": {
+      "id": "showSolids",
+      "speaker": "Sphere",
+      "message": "{The Sphere comes back into Spaceland and addresses you.} So far I have only shown you Plane Figures, but now I must show you Solids and how they are constructed in Spaceland. Behold, when I take these moveable square cards and put one on another, so that I am building a solid out of many squares, you now have what we call a Cube.",
+      "choices": [
+        {
+          "text": "Amazing! I have never seen so marvelous a figure before.",
+          "nextId": "feelCube"
+        },
+        {
+          "text": "To me it still appears as a Plane Figure, but a horribly irregular one. Please explain further...",
+          "nextId": "explainCube"
+        }
+      ]
+      },
+    "explainCube": {
+      "id": "explainCube",
+      "speaker": "Sphere",
+      "message": "It appears to you a Plane because you are not accustomed to light and shade and perspective, just as a Hexagon would appear a straight line to those in Flatland who have not mastered Sight Recognition.",
+      "choices": [
+        {
+          "text": "Ah, I believe I understand better now.",
+          "nextId": "feelCube"
+        },
+    {
+          "text": "This new world is still very confusing to me.",
+          "nextId": "feelCube"
+        }
+      ]
+    },
+    "feelCube": {
+      "id": "feelCube",
+      "speaker": "Sphere",
+      "message": "Come, feel the cube and understand the complexities of the Third Dimension.",
+      "choices": [
+        {
+          "text": "You are right, it has many planar sides and points, unlike anything I have ever felt.",
+          "nextId": "seeInside"
+        }
+      ]
+    },
+    "seeInside": {
+      "id": "seeInside",
+      "speaker": "Sphere",
+      "message": "{As you listen to the Sphere's teachings, an idea formed in your mind.}",
+      "choices": [
+        {
+          "text": "O Now-Imperfect-Teacher, may I be granted a sight into your interior?",
+          "nextId": "whyAsk"
+        }
+      ]
+    },
+    "whyAsk": {
+      "id": "whyAsk",
+      "speaker": "Sphere",
+      "message": "What? Why do you ask this of me now? And why do you now call me imperfect?",
+      "choices": [
+        {
+          "text": "Your teachings have taught me that there must be some being of a fourth dimension that is made up of a multitude of Spheres in One Supreme Existence.",
+          "nextId": "unimportant"
+        }
+      ]
+    },
+    "unimportant": {
+      "id": "unimportant",
+      "speaker": "Sphere",
+      "message": "This is unimportant. There is still much to teach you to insure you will be able to spread the Gospel of Three Dimensions to your fellow Flatlanders.",
+      "choices": [
+        {
+          "text": "Nay, do not deny me that which I know you can do.",
+          "nextId": "noPower"
+        },
+        {
+          "text": "You are right. I will forget about my ramblings.",
+          "nextId": "sphereLeaves"
+        }
+      ]
+    },
+    "noPower": {
+      "id": "noPower",
+      "speaker": "Sphere",
+      "message": "It is not in my power to show you my interior. There is no such land with Four Dimensions. Such an idea is impossible!",
+      "choices": [
+        {
+          "text": "It is not inconceivable to me. It is like your analogy.",
+          "nextId": "analogy4D"
+        },
+        {
+          "text": "You are right. I will forget about my ramblings.",
+          "nextId": "sphereLeaves"
+        }
+      ]
+    },
+    "analogy4D": {
+      "id": "analogy4D",
+      "speaker": "Sphere",
+      "message": "What analogy? How do you explain this?",
+      "choices": [
+        {
+          "text": "{Explain how a moving Cube should produce a Four Dimensional shape.}",
+          "nextId": "witness"
+        },
+        {
+          "text": "Never mind, Teacher. I will forget about my ramblings.",
+          "nextId": "sphereLeaves"
+        }
+      ]
+    },
+    "witness": {
+      "id": "witness",
+      "speaker": "Sphere",
+      "message": "Indeed, it has been reported that beings such as the ones you describe have been seen by my countrymen. However, there are many different explanations for these appearances, and no one has suggested the theory of a Fourth Dimension, so please let us return to business.",
+      "choices": [
+        {
+          "text": "I was certain of it! And why stop with Four Dimensions? Five, Six, Seven,...",
+          "nextId": "sphereLeavesAngry"
+        },
+        {
+          "text": "You are right. I will forget about my ramblings.",
+          "nextId": "sphereLeaves"
+        }
+      ]
+    },
+    "sphereLeaves": {
+      "id": "sphereLeaves",
+      "speaker": "Sphere",
+      "message": "Finally you see reason. {After a few more lessons} Now I must send you back to Flatland and leave you. Do not worry, I will return to you shortly.",
+      "choices": [
+        {
+          "text": "Farewell, gracious Teacher!",
+          "nextId": "level:flatland2"
+        }
+      ]
+    },
+    "sphereLeavesAngry": {
+      "id": "sphereLeavesAngry",
+      "speaker": "Sphere",
+      "message": "Enough of this nonsense! {As you continue to talk, suddenly you feel a force that pushes you back down to your house in Flatland.}",
+      "choices": [
+        {
+          "text": "No, wait!",
+          "nextId": "level:flatland2"
+        }
+      ]
+    }
+  }
+}
